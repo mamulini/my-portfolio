@@ -10,8 +10,12 @@ body {
   color: #ffffff;
   scroll-behavior: smooth;
   height: 100%;
+  /* overflow: hidden; */
 }
 
-/* .App {
-  text-align: center;
-} */
+.App {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
+}

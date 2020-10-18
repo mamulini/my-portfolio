@@ -6,6 +6,7 @@ import {
   ModalContainer,
   ModalContent,
   ModalHeader,
+  ModalTitle,
   ModalActions,
   ModalClose,
   ModalMinimize,
@@ -13,11 +14,11 @@ import {
   StyledResizable,
   WindowContainer
 } from './window.style';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import 'react-resizable/css/styles.css';
 
 const Window = ({
-  isHidden,
   setIsHidden,
   title,
   children,
@@ -33,13 +34,8 @@ const Window = ({
 }) => {
   const nodeRef = useRef(null);
 
-  // if (isHidden) {
-  //   console.log('isHidden is true');
-  //   return null;
-  // }
-
   const minimizeModal = () => {
-    setWidth(180);
+    setWidth(220);
     setHeight(41);
     setMinimize(true);
     setMaximize(false);
@@ -51,8 +47,8 @@ const Window = ({
       setWidth(window.innerWidth);
       setHeight(window.innerHeight);
     } else {
-      setWidth(600);
-      setHeight(400);
+      setWidth(500);
+      setHeight(500);
       setMinimize(false);
       setMaximize(false);
     }
@@ -61,8 +57,8 @@ const Window = ({
   const closeModal = () => {
     setIsHidden(true);
     setMinimize(false);
-    setWidth(600);
-    setHeight(400);
+    setWidth(500);
+    setHeight(500);
     setMaximize(false);
   };
 
@@ -88,8 +84,7 @@ const Window = ({
           {...(minimize || maximize ? { axis: 'none' } : {})}
           width={width}
           height={height}
-          minConstraints={[500, 300]}
-          // maxConstraints={[Infinity, Infinity]}
+          minConstraints={[500, 500]}
           style={ResizeStyle}
           onResize={(e, data) => {
             setWidth(data.size.width);
@@ -99,11 +94,17 @@ const Window = ({
         >
           <ModalContainer ref={nodeRef} minimize={minimize}>
             <ModalHeader className="handle" minimize={minimize} onDoubleClick={maximizeModal}>
-              <h3>{title}</h3>
-              <ModalActions>
-                <ModalMinimize onClick={minimizeModal}></ModalMinimize>
-                <ModalMaximize onClick={maximizeModal}></ModalMaximize>
-                <ModalClose onClick={closeModal}>&times;</ModalClose>
+              <ModalTitle minimize={minimize}>{title}</ModalTitle>
+              <ModalActions minimize={minimize}>
+                <ModalMinimize onClick={minimizeModal}>
+                  <FontAwesomeIcon icon={['far', 'window-minimize']} />
+                </ModalMinimize>
+                <ModalMaximize onClick={maximizeModal}>
+                  <FontAwesomeIcon icon={['far', 'window-maximize']} />
+                </ModalMaximize>
+                <ModalClose onClick={closeModal}>
+                  <FontAwesomeIcon icon={['fas', 'times']} />
+                </ModalClose>
               </ModalActions>
             </ModalHeader>
             <ModalContent minimize={minimize}>{children}</ModalContent>

@@ -10,7 +10,6 @@ const Form = () => {
     initialValues: { firstName: '', email: '', message: '' },
     onSubmit: (values, actions) => {
       actions.setSubmitting(true);
-      // setTimeout(() => {
       emailjs
         .send(
           'gmail_service',
@@ -22,7 +21,7 @@ const Form = () => {
           },
           'user_Ve5i24OLb7eA9MUG3Mw7O'
         )
-        .then(res => {
+        .then(() => {
           alert('Message sent successfully!');
           actions.setSubmitting(false);
           actions.resetForm();
@@ -31,7 +30,6 @@ const Form = () => {
           actions.setSubmitting(false);
           alert('Error sending email...');
         });
-      // }, 1000);
     }
   });
   return (
@@ -70,7 +68,7 @@ const Form = () => {
       />
 
       <FormButton type="submit" loader="Submitting..">
-        Submit
+        send
       </FormButton>
     </FormContainer>
   );

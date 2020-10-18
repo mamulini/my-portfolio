@@ -1,9 +1,12 @@
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 
 export const ProjectsContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  top: 80px;
 `;
 
 export const ProjectsTitle = styled.h1`
@@ -14,13 +17,38 @@ export const ProjectsTitle = styled.h1`
 `;
 
 export const ProjectsList = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 10px;
-  width: 70vw;
-  /* height: 60vh; */
-  /* background: #f5ebd8; */
-  padding: 10px;
-  border-radius: 10px;
-  /* box-shadow: 15px 15px 6px #a13333; */
+  display: flex;
+  width: 80vw;
+  margin-top: 10%;
+
+  @media screen and (max-width: 1023px) {
+    width: 100vw;
+  }
+
+  @media screen and (max-width: 900px) and (orientation: landscape) {
+    width: 80vw;
+    top: 80%;
+  }
+
+  .rec-arrow {
+    color: #fff;
+    background: transparent;
+
+    &:hover,
+    &:focus {
+      background: var(--secondary-color);
+    }
+  }
+
+  .rec-dot {
+    box-shadow: 0 0 1px 2px #fff;
+  }
+
+  .rec-dot_active {
+    background: var(--secondary-color);
+  }
+
+  .rec-item-wrapper {
+    padding-bottom: 10px !important;
+  }
 `;

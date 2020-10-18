@@ -2,8 +2,8 @@ import styled, { css } from 'styled-components';
 
 const shrinkStyles = css`
   top: -14px;
-  font-size: 12px;
-  color: black;
+  font-size: 14px;
+  color: var(--primary-color);
 `;
 
 const labelStyles = ({ label }) => {

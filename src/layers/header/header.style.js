@@ -1,9 +1,9 @@
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import styled from 'styled-components/macro';
 
 export const HeaderContainer = styled.div`
   background: transparent;
   width: 100%;
+  height: 65px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -18,29 +18,18 @@ export const HeaderContainer = styled.div`
     height: 1px;
     width: 95%;
     margin: 0 auto;
-    border-bottom: 1px solid #a13333;
+    border-bottom: 1px solid var(--secondary-color);
     opacity: 0.5;
-  }
-
-  a {
-    padding: 20px;
   }
 `;
 
 export const LogoContainer = styled.div`
-  padding: 20px;
-`;
+  width: 90px;
+  margin-top: 5px;
+  margin-left: 30px;
 
-export const Nav = styled.div`
-  display: flex;
-  justify-content: space-between;
-  margin-right: 20px;
-`;
-
-export const NavLink = styled(Link)`
-  padding: 20px;
-
-  &:hover {
-    color: #a13333;
+  @media screen and (max-width: 460px) {
+    margin-left: 10px;
+    width: 60px;
   }
 `;

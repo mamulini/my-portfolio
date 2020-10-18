@@ -1,8 +1,6 @@
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 
 export const SidebarContainer = styled.div`
-  height: 400px;
-  background: transparent;
   position: absolute;
   left: 30px;
   top: 15%;

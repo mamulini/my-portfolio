@@ -1,7 +1,6 @@
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 
 export const ShortcatContainer = styled.div`
-  padding: 10px;
   margin-bottom: 20px;
   border-radius: 5px;
   cursor: pointer;
@@ -15,7 +14,8 @@ export const ShortcutIconWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 40px;
+  padding: 10px;
+  width: 80px;
 `;
 
 export const ShortcutTitle = styled.span`
