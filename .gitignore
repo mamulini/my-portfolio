@@ -13,10 +13,10 @@
 /build
 
 # other
-desktop.ini
-folderico-1600889557.ico
-.env
-tasks.md
+/desktop.ini
+/folderico-1600889557.ico
+/.env
+/tasks.md
 
 # misc
 .DS_Store
