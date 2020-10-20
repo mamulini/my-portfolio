@@ -31,8 +31,8 @@ export const NavbarLink = styled(Link)`
   padding: 20px;
   display: inline-block;
   text-align: center;
-  font-size: 20px;
-  margin-left: 20px;
+  font-size: 18px;
+  margin-left: 10px;
 
   @media screen and (max-width: 940px) {
     padding: 10px;

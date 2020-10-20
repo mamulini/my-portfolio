@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Navbar from '../../components/navbar/navbar';
 import BurgerButton from '../../components/burger-button/burger-button';
 import { HeaderContainer, LogoContainer } from './header.style';
-import logo from '../../assets/icons/logo.png';
+import logo from '../../assets/icons/DM__Logo.png';
 
 const Header = () => {
   const [open, setOpen] = useState(false);

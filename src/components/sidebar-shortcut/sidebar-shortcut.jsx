@@ -7,15 +7,15 @@ const Shortcut = ({ title, icon, eventHandler }) => {
     <ShortcatContainer onClick={() => eventHandler(false)}>
       <ShortcutIconWrapper>
         <img src={icon} alt="icon" />
-        <ShortcutTitle>{title}</ShortcutTitle>
       </ShortcutIconWrapper>
+      <ShortcutTitle>{title}</ShortcutTitle>
     </ShortcatContainer>
   );
 };
 
 Shortcut.propTypes = {
   title: PropTypes.string,
-  icon: PropTypes.any,
+  icon: PropTypes.string.isRequired,
   eventHandler: PropTypes.func
 };
 

@@ -3,19 +3,19 @@ import React from 'react';
 import {
   HomepageContainer,
   GreetingsTitle,
-  NameTitle,
-  Tagline,
+  GreetingsName,
+  GreetingsSubtitle,
   GreetingsWrapper
 } from './homepage.style';
 
 const Homepage = () => (
   <HomepageContainer>
     <GreetingsWrapper>
-      <GreetingsTitle>{`Hi i'm`}</GreetingsTitle>
-      <NameTitle>
+      <GreetingsTitle>Hi i&apos;m</GreetingsTitle>
+      <GreetingsName>
         David <br /> Mamulia.
-      </NameTitle>
-      <Tagline>The front-end developer.</Tagline>
+      </GreetingsName>
+      <GreetingsSubtitle>The front-end developer.</GreetingsSubtitle>
     </GreetingsWrapper>
   </HomepageContainer>
 );

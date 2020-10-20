@@ -31,7 +31,7 @@ export const GreetingsTitle = styled.h2`
   }
 `;
 
-export const NameTitle = styled.h1`
+export const GreetingsName = styled.h1`
   font-size: 94px;
   color: var(--lighter-color);
   text-shadow: 1px 7px 2px var(--secondary-color);
@@ -42,7 +42,7 @@ export const NameTitle = styled.h1`
   }
 `;
 
-export const Tagline = styled.h2`
+export const GreetingsSubtitle = styled.h2`
   font-size: 54px;
   font-weight: bold;
   @media screen and (max-width: 767px) {

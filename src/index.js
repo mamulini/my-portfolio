@@ -6,13 +6,13 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-  // <React.StrictMode>
-  <BrowserRouter basename={'/my-portfolio'}>
+  <BrowserRouter>
     <App />
   </BrowserRouter>,
-  // </React.StrictMode>,
   document.getElementById('root')
 );
+
+//basename={'/my-portfolio'}
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

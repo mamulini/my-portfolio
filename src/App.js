@@ -1,14 +1,14 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-
-import AboutPage from './pages/about/about.page';
-import Sidebar from './layers/sidebar/sidebar';
-import './components/fontAwsomeIcons/fontAwsomeIcons';
-import Homepage from './pages/homepage/homepage';
-import Header from './layers/header/header';
-import Contact from './pages/contact/contact.page';
-import ProjectsPage from './pages/projects/projects.page';
 import { AppContainer, GlobalStyles } from './global.style';
+
+import Homepage from './pages/homepage/homepage';
+import AboutPage from './pages/about/about.page';
+import Header from './layers/header/header';
+import ProjectsPage from './pages/projects/projects.page';
+import Sidebar from './layers/sidebar/sidebar';
+import Contact from './pages/contact/contact.page';
+import './components/fontAwsomeIcons/fontAwsomeIcons';
 
 function App() {
   return (

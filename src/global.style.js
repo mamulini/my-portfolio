@@ -11,7 +11,6 @@ html {
 
 body {
   font-family: 'Poppins', sans-serif;
-  scroll-behavior: smooth;
   color: #ffffff;
   height: 100%;
   

@@ -49,7 +49,7 @@ export const ContactContent = styled.div`
   }
 `;
 
-export const BlockWrapper = styled.div`
+export const ContactSection = styled.div`
   min-height: 20px;
   width: 45%;
   margin-top: 10px;

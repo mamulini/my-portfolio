@@ -14,10 +14,14 @@ const SocialNetwork = () => (
     <SocialTitle>Connect on social</SocialTitle>
     <SocialSubtitle>Feel free to look at my social media accounts</SocialSubtitle>
     <SocialLinkContainer>
-      <SocialLink href="https://facebook.com/mamulini" target="_blank" rel="noopener noreferrer">
+      <SocialLink
+        href="https://www.facebook.com/david.mamulia"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <FontAwesomeIcon icon={['fab', 'facebook-square']} />
       </SocialLink>
-      <SocialLink href="https://instagram.com/mamulini" target="_blank" rel="noopener noreferrer">
+      <SocialLink href="https://instagram.com/mamulinni" target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon={['fab', 'instagram-square']} />
       </SocialLink>
       <SocialLink href="https://github.com/mamulini" target="_blank" rel="noopener noreferrer">
@@ -26,7 +30,11 @@ const SocialNetwork = () => (
       <SocialLink href="https://dev.to/mamulini" target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon={['fab', 'dev']} />
       </SocialLink>
-      <SocialLink href="https://linked.in/mamulini" target="_blank" rel="noopener noreferrer">
+      <SocialLink
+        href="https://www.linkedin.com/in/david-mamulia-157bab128/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <FontAwesomeIcon icon={['fab', 'linkedin']} />
       </SocialLink>
       <SocialLink href="mailto:mamuliadavit@gmail.com">

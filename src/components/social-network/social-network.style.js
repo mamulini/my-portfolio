@@ -50,7 +50,9 @@ export const SocialLink = styled.a`
   }
 
   svg:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     color: gray;
+    color: var(--secondary-color);
+    transition: transform 0.5s ease;
   }
 `;
