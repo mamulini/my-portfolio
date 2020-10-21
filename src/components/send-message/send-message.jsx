@@ -37,13 +37,6 @@ const SendMessage = () => {
         </Window>
       )}
       <Shortcut title="Write me" icon={contactsIcon} eventHandler={setHideSend} />
-
-      {/* <div className="contacts" onClick={() => setHideSend(false)}>
-        <div className="about_logo-wrapper">
-          <img className="about_logo" src={contactsIcon} />
-          <span className="subtitle">Write to me</span>
-        </div>
-      </div> */}
     </>
   );
 };

@@ -21,7 +21,7 @@ export const ProjectsList = styled.div`
   width: 80vw;
   margin-top: 10%;
 
-  @media screen and (max-width: 1023px) {
+  @media screen and (max-width: 700px) {
     width: 100vw;
   }
 

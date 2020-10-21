@@ -17,6 +17,9 @@ export const ProjectItemContainer = styled.div`
   color: var(--lighter-color);
   box-shadow: 4px 4px 6px var(--secondary-color);
 
+  /* @media screen and (max-width: 800px) and (min-width: 650px) {
+    width: unset;
+  } */
   &:hover ${ProjectItemContent} {
     position: absolute;
     background: #000024;
@@ -30,8 +33,8 @@ export const ProjectItemContainer = styled.div`
 export const ProjectItemImg = styled.div`
   height: 300px;
 
-  @media screen and (max-width: 1023px) {
-    height: 200px;
+  @media screen and (max-width: 940px) {
+    height: 350px;
   }
 
   @media screen and (max-width: 800px) {
