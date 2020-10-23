@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import Window from '../window/window';
 import contactsIcon from '../../assets/icons/send-message.png';
 import Form from '../form/form';
@@ -13,6 +14,8 @@ const SendMessage = () => {
   const [maximize, setMaximize] = useState(false);
 
   const margin = 'auto';
+
+  const { t } = useTranslation();
 
   return (
     <>
@@ -36,7 +39,7 @@ const SendMessage = () => {
           </MessageFormContainer>
         </Window>
       )}
-      <Shortcut title="Write me" icon={contactsIcon} eventHandler={setHideSend} />
+      <Shortcut title={t('shortcutMessage.title')} icon={contactsIcon} eventHandler={setHideSend} />
     </>
   );
 };

@@ -5,7 +5,7 @@ export const FormContainer = styled.form`
   flex-direction: column;
   height: 100%;
   textarea {
-    height: 100px;
+    height: 90px;
   }
 `;
 

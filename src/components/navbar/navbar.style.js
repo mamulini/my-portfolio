@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 export const NavbarContainer = styled.div`
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-right: 20px;
 
   @media screen and (max-width: 940px) {
@@ -12,6 +13,7 @@ export const NavbarContainer = styled.div`
     justify-content: flex-start;
     align-items: flex-start;
     background: #000000;
+    background-color: rgba(0, 0, 0, 0.8);
     margin-right: -20px;
     transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(100%)')};
     width: 70%;
@@ -23,7 +25,6 @@ export const NavbarContainer = styled.div`
     right: 0;
     transition: transform 0.3s ease-in-out;
     z-index: 7;
-    opacity: 0.7;
   }
 `;
 

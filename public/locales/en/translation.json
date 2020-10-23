@@ -1,0 +1,41 @@
+{
+  "homepage": {
+    "greetings": "Hi I'm",
+    "name": "David  Mamulia",
+    "subtitle": "The front-end developer."
+  },
+  "aboutpage": {
+    "title": "Who am I ?",
+
+    "part1": "I'm David Mamulia, a front-end web developer with a sysadmin background, living in Kyiv, with beautiful wife and cute jack russel terrier",
+    "part2": "I completed font-end developer basics course at PowerCode Academy in Kyiv, JavaScript advanced and ReactJS courses on Udemy.com, i love reading books and articles about programing, learning new skills and practicing what i have learnt already. I take every opportunity to learn and build projects.",
+    "part3": "When i'm not working or learning, i like to do sport, listen to music, hiking in nature."
+  },
+  "projectpage": {
+    "title": "My projects"
+  },
+  "contactpage": {
+    "title": "Contacts"
+  },
+  "social": {
+    "title": "Connect on social",
+    "subtitle": "Feel free to look at my social media accounts"
+  },
+  "form": {
+    "title": "Send a message",
+    "message": "Message",
+    "email": "Email",
+    "name": "Name",
+    "send": "send"
+  },
+  "shortcutMessage": {
+    "title": "Write me"
+  },
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+
+  }
+}

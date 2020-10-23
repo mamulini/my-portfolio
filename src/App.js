@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Suspense } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import { AppContainer, GlobalStyles } from './global.style';
 
@@ -14,7 +14,6 @@ function App() {
   const [isTablet, setTablet] = useState(window.innerWidth > 1023);
   const [isSmallTablet, setSmalltablet] = useState(window.innerWidth > 941);
   const [isMobile, setMobile] = useState(window.innerWidth > 440);
-  console.log(isTablet);
 
   const updateMedia = () => {
     setTablet(window.innerWidth > 1023);
@@ -30,21 +29,23 @@ function App() {
 
   return (
     <AppContainer id="app">
-      <GlobalStyles />
-      <Header isSmallTablet={isSmallTablet} />
-      {isTablet ? <Sidebar /> : null}
-      <Switch>
-        <Route exact path="/" component={Homepage} />
-        <Route exact path="/about" component={AboutPage} />
-        <Route exact path="/contact" component={Contact} />
-        <Route
-          exact
-          path="/projects"
-          render={props => (
-            <ProjectsPage {...props} isSmallTablet={isSmallTablet} isMobile={isMobile} />
-          )}
-        />
-      </Switch>
+      <Suspense fallback={null}>
+        <GlobalStyles />
+        <Header isSmallTablet={isSmallTablet} />
+        {isTablet ? <Sidebar /> : null}
+        <Switch>
+          <Route exact path="/" component={Homepage} />
+          <Route exact path="/about" component={AboutPage} />
+          <Route exact path="/contact" component={Contact} />
+          <Route
+            exact
+            path="/projects"
+            render={props => (
+              <ProjectsPage {...props} isSmallTablet={isSmallTablet} isMobile={isMobile} />
+            )}
+          />
+        </Switch>
+      </Suspense>
     </AppContainer>
   );
 }

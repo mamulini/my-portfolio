@@ -23,7 +23,7 @@ export const ContactContent = styled.div`
   margin: 0 50px 0 50px;
   background: var(--lighter-color);
   border-radius: 10px;
-  padding: 40px 40px 0 40px;
+  padding: 20px 40px 0 40px;
   color: var(--primary-color);
   box-shadow: 8px 8px 6px var(--secondary-color);
 

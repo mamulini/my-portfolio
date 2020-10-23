@@ -13,7 +13,7 @@ export const projectsData = [
     title: 'Clothing store',
     imageUrl: require('../assets/project-images/clothing.png'),
     subtitle:
-      ' E-commerce clothing store app. build with ReactJS and Redux sagas. including Google authentication for sign-in and sign-up, Firebase for storing the user and cart item data, and integrating payment methods with Stripe.',
+      ' E-commerce clothing store app. built with ReactJS and Redux sagas. including Google authentication for sign-in and sign-up, Firebase for storing the user and cart item data, and integrating payment methods with Stripe.',
     github: 'https://github.com/mamulini/crawn-clothing',
     page: 'https://crw-shopping.herokuapp.com/'
   },

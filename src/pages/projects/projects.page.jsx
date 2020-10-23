@@ -1,6 +1,7 @@
 import React from 'react';
 import Carousel from 'react-elastic-carousel';
 import PropTypes from 'prop-types';
+import { useTranslation } from 'react-i18next';
 
 import ProjectItem from '../../components/project-item/project-item';
 import { projectsData } from '../../data/projects.data';
@@ -8,9 +9,11 @@ import { projectsData } from '../../data/projects.data';
 import { ProjectsContainer, ProjectsTitle, ProjectsList } from './projects.style';
 
 const ProjectsPage = ({ isSmallTablet, isMobile }) => {
+  const { t } = useTranslation();
+
   return (
     <ProjectsContainer>
-      <ProjectsTitle>My projects</ProjectsTitle>
+      <ProjectsTitle>{t('projectpage.title')}</ProjectsTitle>
       <ProjectsList>
         <Carousel itemsToShow={isSmallTablet ? 2 : 1} enableAutoPlay={false} showArrows={isMobile}>
           {projectsData.map(({ title, id, imageUrl, subtitle, github, page }) => (

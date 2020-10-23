@@ -41,7 +41,7 @@ export const ProjectItemImg = styled.div`
     height: 300px;
   }
   @media screen and (max-width: 460px) {
-    height: 230px;
+    height: 250px;
   }
 
   img {

@@ -17,6 +17,7 @@ const Header = ({ isSmallTablet }) => {
           <img src={logo} alt="logo" />
         </Link>
       </LogoContainer>
+
       {isSmallTablet ? (
         <Navbar open={open} setOpen={setOpen} />
       ) : (

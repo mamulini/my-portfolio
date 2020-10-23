@@ -1,0 +1,41 @@
+{
+  "homepage": {
+    "greetings": "Привет, я",
+    "name": "Давид Мамулия",
+    "subtitle": "Фронтенд разработчик."
+  },
+  "aboutpage": {
+    "title": "Кто я ?",
+    "part1": "Um loszulegen, ändere <1>src/App(DE).js</1> und speichere um neuzuladen.",
+    "part2": "Wechsle die Sprache zwischen deutsch und englisch mit Hilfe der beiden Schalter.",
+    "part3": "Wechsle die Sprache zwischen deutsch und englisch mit Hilfe der beiden Schalter."
+  },
+  "projectpage": {
+    "title": "Мои проекты"
+  },
+  "contactpage": {
+    "title": "Контакты"
+  },
+  "social": {
+    "title": "Подключитесь в социальных сетях",
+    "subtitle": "Не стесняйтесь посмотреть мои учетные записи в социальных сетях"
+  },
+  "form": {
+    "title": "Отправтье мне сообщение",
+    "message": "Сообщение",
+    "email": "Эл. адрес",
+    "name": "Имя",
+    "send": "Отправить"
+  },
+  "shortcutMessage": {
+    "title": "Напишите"
+  },
+  "navbar": {
+    "home": "Главная",
+    "about": "Обо мне",
+    "projects": "Проекты",
+    "contact": "Контакт"
+
+  }
+}
+

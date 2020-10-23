@@ -1,9 +1,29 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
+import { useTranslation } from 'react-i18next';
 
+import LanguageSelector from '../../components/language-selector/language-selector';
 import { NavbarContainer, NavbarLink } from './navbar.style';
 
 const Navbar = ({ open, setOpen }) => {
+  const { t } = useTranslation();
+
+  const ref = useRef(null);
+
+  const handleClickOutside = event => {
+    if (open === true && ref.current && !ref.current.contains(event.target)) {
+      setOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('click', handleClickOutside);
+
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  });
+
   useEffect(() => {
     const app = document.getElementById('app');
 
@@ -15,19 +35,20 @@ const Navbar = ({ open, setOpen }) => {
   }, [open]);
 
   return (
-    <NavbarContainer open={open}>
+    <NavbarContainer ref={ref} open={open}>
       <NavbarLink to="/" onClick={() => setOpen(false)}>
-        Home
+        {t('navbar.home')}
       </NavbarLink>
       <NavbarLink to="/about" onClick={() => setOpen(false)}>
-        About
+        {t('navbar.about')}
       </NavbarLink>
       <NavbarLink to="/projects" onClick={() => setOpen(false)}>
-        Projects
+        {t('navbar.projects')}
       </NavbarLink>
       <NavbarLink to="/contact" onClick={() => setOpen(false)}>
-        Contact
+        {t('navbar.contact')}
       </NavbarLink>
+      <LanguageSelector />
     </NavbarContainer>
   );
 };

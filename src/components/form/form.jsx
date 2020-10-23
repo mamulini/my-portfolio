@@ -1,6 +1,7 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
 import { useFormik } from 'formik';
+import { useTranslation } from 'react-i18next';
 
 import FormInput from '../form-input/form-input';
 import { FormContainer, FormButton, FormTitle } from './form.style';
@@ -32,16 +33,19 @@ const Form = () => {
         });
     }
   });
+
+  const { t } = useTranslation();
+
   return (
     <FormContainer onSubmit={handleSubmit}>
-      <FormTitle>Send a message</FormTitle>
+      <FormTitle>{t('form.title')}</FormTitle>
       <FormInput
         type="text"
         name="firstName"
         value={`${values.firstName}`}
         handleChange={handleChange}
         handleBlur={handleBlur}
-        label="Name"
+        label={t('form.name')}
         notifications={`${errors.firstName && touched.firstName ? errors.firstName : ''}`}
         required
       />
@@ -51,7 +55,7 @@ const Form = () => {
         value={`${values.email}`}
         handleChange={handleChange}
         handleBlur={handleBlur}
-        label="Email"
+        label={t('form.email')}
         notifications={`${errors.email && touched.email ? errors.email : ''}`}
         required
       />
@@ -62,13 +66,13 @@ const Form = () => {
         value={`${values.message}`}
         handleChange={handleChange}
         handleBlur={handleBlur}
-        label="Message"
+        label={t('form.message')}
         notifications={`${errors.message && touched.message ? errors.message : ''}`}
         required
       />
 
       <FormButton type="submit" loader="Submitting..">
-        send
+        {t('form.send')}
       </FormButton>
     </FormContainer>
   );
