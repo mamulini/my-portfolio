@@ -35,7 +35,7 @@ export const GreetingsName = styled.h1`
   font-size: 94px;
   color: var(--lighter-color);
   text-shadow: 1px 7px 2px var(--secondary-color);
-  font-weight: bolder;
+  font-weight: bold;
   line-height: 1.2;
   @media screen and (max-width: 767px) {
     font-size: 52px;

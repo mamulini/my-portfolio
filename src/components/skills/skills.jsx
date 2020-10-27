@@ -1,10 +1,14 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
+
 import { SkillsContainer, SkillsTitle, SkillsItemsContainer, SkillsItem } from './skills.style';
 
 const Skills = () => {
+  const { t } = useTranslation();
+
   return (
     <SkillsContainer>
-      <SkillsTitle>Skills</SkillsTitle>
+      <SkillsTitle>{t('skills.title')}</SkillsTitle>
       <SkillsItemsContainer>
         <SkillsItem>
           <img src="https://img.icons8.com/color/144/000000/html-5.png" alt="HTML" />

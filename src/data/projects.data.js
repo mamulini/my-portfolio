@@ -1,15 +1,6 @@
 export const projectsData = [
   {
     id: '1',
-    title: 'URL shortener',
-    imageUrl: require('../assets/project-images/url-shortener.png'),
-    subtitle:
-      ' URL shortening responsive landing page. takes url address of website and returns shorter address. I used SCSS preproccesor with BEM methodology and JavaScript',
-    github: 'https://github.com/mamulini/url-shortener/',
-    page: 'https://mamulini.github.io/url-shortener/'
-  },
-  {
-    id: '2',
     title: 'Clothing store',
     imageUrl: require('../assets/project-images/clothing.png'),
     subtitle:
@@ -18,7 +9,25 @@ export const projectsData = [
     page: 'https://crw-shopping.herokuapp.com/'
   },
   {
+    id: '2',
+    title: 'Picture to art',
+    imageUrl: require('../assets/project-images/pictures-art.png'),
+    subtitle:
+      'Picture to art landing page, bundled JS modules with gulp and webpack. Implemented sliders, popups, price calculator, dropdowns. Udemy advanced JavaScript course project.',
+    github: 'https://github.com/mamulini/pictures.art',
+    page: 'https://pictures-art.netlify.app/'
+  },
+  {
     id: '3',
+    title: 'URL shortener',
+    imageUrl: require('../assets/project-images/url-shortener.png'),
+    subtitle:
+      ' URL shortening responsive landing page. takes url address of website and returns shorter address. I used SCSS preproccesor with BEM methodology and JavaScript',
+    github: 'https://github.com/mamulini/url-shortener/',
+    page: 'https://mamulini.github.io/url-shortener/'
+  },
+  {
+    id: '4',
     title: 'Easybank',
     imageUrl: require('../assets/project-images/easybank.png'),
     subtitle:
@@ -27,7 +36,7 @@ export const projectsData = [
     page: 'https://mamulini.github.io/easybank-landing-page/'
   },
   {
-    id: '4',
+    id: '5',
     title: 'Monsters relodex',
     imageUrl: require('../assets/project-images/monsters.png'),
     subtitle:

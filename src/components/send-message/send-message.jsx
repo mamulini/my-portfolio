@@ -21,7 +21,7 @@ const SendMessage = () => {
     <>
       {hideSend ? null : (
         <Window
-          title="Write me"
+          title={t('shortcutMessage.title')}
           isHidden={hideSend}
           setIsHidden={setHideSend}
           width={width}

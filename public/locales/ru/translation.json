@@ -4,11 +4,17 @@
     "name": "Давид Мамулия",
     "subtitle": "Фронтенд разработчик."
   },
+
+  
+
+
+
+
   "aboutpage": {
     "title": "Кто я ?",
-    "part1": "Um loszulegen, ändere <1>src/App(DE).js</1> und speichere um neuzuladen.",
-    "part2": "Wechsle die Sprache zwischen deutsch und englisch mit Hilfe der beiden Schalter.",
-    "part3": "Wechsle die Sprache zwischen deutsch und englisch mit Hilfe der beiden Schalter."
+    "part1": "Меня зовут Давид Мамулия, фронтэнд разработчик с базой сисадмина. Живу в Киеве с прекрасной женой и милым Джек-рассел терьером.",
+    "part2": "Окончил базовый курс Фронтенд разработчиков в PowerCode Academy (Киев), а также продвинутый курс JavaScript и React.JS  на Udemy.com. Люблю читать книги и статьи о программировании, получать новые навыки, применяя на практике изученный материал. Пользуюсь любой возможностью, чтобы учиться и создавать проекты.",
+    "part3": "Когда я не работаю и не учусь, то занимаюсь спортом, играю в футбол, слушаю музыку, путешествую и хожу в походы."
   },
   "projectpage": {
     "title": "Мои проекты"
@@ -35,7 +41,9 @@
     "about": "Обо мне",
     "projects": "Проекты",
     "contact": "Контакт"
-
+  },
+  "skills": {
+    "title":  "Навыки"
   }
 }
 

@@ -14,8 +14,6 @@ body {
   color: #ffffff;
   height: 100%;
   
-
-  /* overflow: hidden; */
 }
 
 .app_overflow{
@@ -37,6 +35,5 @@ export const AppContainer = styled.div`
 
   @media screen and (max-width: 900px) and (orientation: landscape) {
     height: 100vw;
-    /* top: 80%; */
   }
 `;
