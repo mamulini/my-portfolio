@@ -16,7 +16,8 @@ const Homepage = () => {
     <HomepageContainer>
       <GreetingsWrapper>
         <GreetingsTitle>{t('homepage.greetings')}</GreetingsTitle>
-        <GreetingsName>{t('homepage.name')}</GreetingsName>
+        <GreetingsName>{t('homepage.name.first')}</GreetingsName>
+        <GreetingsName>{t('homepage.name.second')}</GreetingsName>
         <GreetingsSubtitle>{t('homepage.subtitle')}</GreetingsSubtitle>
       </GreetingsWrapper>
     </HomepageContainer>

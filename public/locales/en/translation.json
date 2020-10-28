@@ -1,7 +1,10 @@
 {
   "homepage": {
     "greetings": "Hi I'm",
-    "name": "David  Mamulia",
+    "name": {
+      "first": "David",
+      "second": "Mamulia"
+    },
     "subtitle": "The front-end developer."
   },
   "aboutpage": {

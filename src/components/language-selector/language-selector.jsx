@@ -6,19 +6,17 @@ import { Select, SelectContainer } from './language-selector.style';
 const LenguageSelector = () => {
   const { i18n } = useTranslation();
 
-  // useEffect(() => {
-  //   i18n.changeLanguage('en');
-  // }, [i18n]);
+  const changeLanguage = lng => {
+    i18n.changeLanguage(lng);
+  };
 
   const handleChange = e => {
-    i18n.changeLanguage(e.target.value);
-    console.log('changed');
+    changeLanguage(e.target.value);
   };
 
   return (
     <SelectContainer>
-      <Select defaultValue="en" onChange={e => handleChange(e)}>
-        {/* <option value="ico">Choose language</option> */}
+      <Select defaultValue={i18n.language} onChange={e => handleChange(e)}>
         <option value="en">EN</option>
         <option value="ru">RU</option>
       </Select>
